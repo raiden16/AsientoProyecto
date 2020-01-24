@@ -49,7 +49,7 @@
         Try
 
             oRecSettxb = SBOCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
-            stQuerytxb = "call ""Asiento_Titulo_Proyect"""
+            stQuerytxb = "call ""Asiento_Titulo_Proyect"" (" & Now.Date.Month & "," & Now.Date.Year & ")"
 
             oRecSettxb.DoQuery(stQuerytxb)
 
